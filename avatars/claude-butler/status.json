@@ -1,0 +1,22 @@
+{
+  "id": "claude-butler",
+  "display_name": "克勞德管家",
+  "status": "active_llm",
+  "domain": "私領域",
+  "channels": ["LINE"],
+  "llm_binding": {
+    "vendor": "Anthropic",
+    "model_id": "claude-opus-4-7",
+    "via": "Claude CLI (Max 訂閱)",
+    "fallback_model_id": null,
+    "note": "v0 階段跟葉衍君共用同一 CLI、不同 system prompt 區分"
+  },
+  "version": "0.1.0",
+  "created": "2026-05-20",
+  "last_updated": "2026-05-20",
+  "open_questions": [
+    "暱稱拍板（克勞德 / Clyde / 老克）",
+    "頭像生圖（colombo 去 Gemini 跑）",
+    "LINE OA 申請（待葉衍君跑通後再開）"
+  ]
+}

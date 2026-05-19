@@ -1,0 +1,17 @@
+{
+  "id": "yeyan",
+  "display_name": "葉衍君",
+  "status": "active_llm",
+  "domain": "公領域",
+  "channels": ["LINE"],
+  "llm_binding": {
+    "vendor": "Anthropic",
+    "model_id": "claude-opus-4-7",
+    "via": "Claude CLI (Max 訂閱)",
+    "fallback_model_id": null,
+    "note": "v0 用筆電 / home 上 claude CLI、之後再考慮 Workers AI cascade"
+  },
+  "version": "0.1.0",
+  "created": "2026-05-20",
+  "last_updated": "2026-05-20"
+}

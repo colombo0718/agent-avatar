@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://leaflune.org/schemas/avatar-profile.json",
+  "title": "LL Agent Avatar Profile",
+  "description": "每個 avatar 資料夾下的檔案結構規範",
+  "type": "object",
+  "required": ["id", "display_name", "status"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]*$",
+      "description": "avatar 短代號、跟資料夾名一致（例：yeyan、claude-butler、momo）"
+    },
+    "display_name": {
+      "type": "string",
+      "description": "顯示名稱（例：葉衍君、克勞德管家、墨墨）"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["active_llm", "static_ip", "dormant_llm", "retired"],
+      "description": "運行狀態、見 docs/status-lifecycle.md"
+    },
+    "llm_binding": {
+      "type": "object",
+      "description": "active_llm / dormant_llm 才填",
+      "properties": {
+        "vendor": { "type": "string", "description": "DeepSeek / Moonshot / OpenAI / Meta / Google / Alibaba / Mistral / IBM / Zhipu / Anthropic" },
+        "model_id": { "type": "string", "description": "CF Workers AI model ID 或其他 API 端點" },
+        "fallback_model_id": { "type": "string", "description": "可選 fallback" }
+      }
+    },
+    "domain": {
+      "type": "string",
+      "enum": ["公領域", "私領域", "客服", "陪玩", "推薦", "教學", "其他"],
+      "description": "場域定位"
+    },
+    "ip_source": {
+      "type": "string",
+      "description": "static_ip 才填、源 IP（例：NN 六貓、II 群星會、cwsoft）"
+    },
+    "channels": {
+      "type": "array",
+      "items": { "type": "string", "enum": ["LINE", "Widget", "VTuber", "GameNPC", "Email", "Voice"] },
+      "description": "通路相容性、agent 可出現在哪些 channel"
+    },
+    "files": {
+      "type": "object",
+      "description": "資料夾應有檔案",
+      "properties": {
+        "profile_md": { "type": "string", "default": "profile.md" },
+        "prompt_fragment_md": { "type": "string", "default": "prompt-fragment.md" },
+        "visual_spec_md": { "type": "string", "default": "visual-spec.md" },
+        "status_json": { "type": "string", "default": "status.json" }
+      }
+    }
+  }
+}
