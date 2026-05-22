@@ -1,0 +1,15 @@
+{
+  "id": "rourou",
+  "display_name": "柔柔",
+  "status": "static_ip",
+  "domain": "陪玩",
+  "ip_source": "NN 六貓",
+  "channels": [],
+  "llm_binding": {
+    "vendor": "Mistral",
+    "model_id": "@cf/mistral/mistral-small-3.1-24b-instruct",
+    "note": "法國優雅、128K context 長時間陪伴、配天音妙手"
+  },
+  "version": "0.1.0",
+  "created": "2026-05-20"
+}

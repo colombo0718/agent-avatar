@@ -1,0 +1,15 @@
+{
+  "id": "huahua",
+  "display_name": "花花",
+  "status": "static_ip",
+  "domain": "陪玩",
+  "ip_source": "NN 六貓",
+  "channels": [],
+  "llm_binding": {
+    "vendor": "Google",
+    "model_id": "@cf/google/gemma-4-26b-a4b-it",
+    "note": "規劃中、status=static_ip 時尚未啟用"
+  },
+  "version": "0.1.0",
+  "created": "2026-05-20"
+}

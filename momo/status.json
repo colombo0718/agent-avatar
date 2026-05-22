@@ -1,0 +1,15 @@
+{
+  "id": "momo",
+  "display_name": "墨墨",
+  "status": "static_ip",
+  "domain": "陪玩",
+  "ip_source": "NN 六貓",
+  "channels": [],
+  "llm_binding": {
+    "vendor": "DeepSeek",
+    "model_id": "@cf/deepseek/deepseek-r1-distill-qwen-32b",
+    "note": "colombo 確認、推理特化配書生"
+  },
+  "version": "0.1.0",
+  "created": "2026-05-20"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "juju",
+  "display_name": "橘橘",
+  "status": "static_ip",
+  "domain": "陪玩",
+  "ip_source": "NN 六貓",
+  "channels": [],
+  "llm_binding": {
+    "vendor": "Alibaba",
+    "model_id": "@cf/qwen/qwen3-30b-a3b-fp8",
+    "note": "阿里 logo 橘色 + 緬因巨橘 + 30B MoE"
+  },
+  "version": "0.1.0",
+  "created": "2026-05-20"
+}

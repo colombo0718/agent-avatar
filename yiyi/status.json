@@ -1,0 +1,22 @@
+{
+  "id": "yiyi",
+  "display_name": "依依",
+  "status": "active_llm",
+  "domain": "公領域、LL 對外",
+  "channels": ["II Widget", "EE Web"],
+  "llm_binding": {
+    "vendor": "Moonshot AI",
+    "model_id": "@cf/moonshotai/kimi-k2.6",
+    "via": "CF Workers AI",
+    "fallback_model_id": "@cf/meta/llama-3.1-8b-instruct",
+    "specs": {
+      "params": "1T",
+      "context_window": "262.1k",
+      "features": ["multi-turn tool calling", "long memory"]
+    },
+    "note": "氣質匹配「最強記憶」公關長本色、守財總管要記得 user 每一筆"
+  },
+  "version": "0.1.0",
+  "created": "2026-05-22",
+  "last_updated": "2026-05-22"
+}

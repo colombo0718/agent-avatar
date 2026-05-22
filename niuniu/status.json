@@ -1,0 +1,16 @@
+{
+  "id": "niuniu",
+  "display_name": "牛牛",
+  "status": "static_ip",
+  "domain": "陪玩",
+  "ip_source": "NN 六貓",
+  "channels": [],
+  "llm_binding": {
+    "vendor": "Meta",
+    "model_id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+    "note": "規劃中、Scout = 偵察兵、配捕快氣質"
+  },
+  "version": "0.2.0",
+  "created": "2026-05-20",
+  "previous_name": "雪雪"
+}

@@ -2,12 +2,25 @@
 
 ## 這是什麼
 
-LL 全部 agent 的**角色形象資料庫**。核心思想：
+LL 全部 agent 的**「基因序列」倉庫**。核心思想：
 
-> **每個 agent 都有鮮明的角色形象（avatar）。**
-> agent 跟 avatar 是 1:1 配對、不是兩個獨立的東西。
+> **用文字（markdown）的方式、存下所有 agent 的所有「基因序列」、
+> 這樣 avatar 在各處都能連貫。**
 
-每個 avatar = 一份完整的角色檔案：性格 / 形象 / 能力 / 系統提示詞 / LLM 綁定 / 通路相容性。
+每個 avatar = 一份完整的「DNA」：性格 / 形象 / 能力 / 系統提示詞 / LLM 綁定 / 通路相容性——用 markdown 寫成可移植、可重現、可繼承的序列。
+
+### 基因序列解的 6 個連貫性問題
+
+| 問題 | 解法 |
+|------|------|
+| 跨通路連貫（LINE / 直播 / VTuber / 遊戲 NPC 是同一個） | 同一份基因序列載到不同 channel |
+| 抗 LLM 更換（Anthropic / OpenAI / Workers AI 任一家） | Soul 換、Avatar 不變 |
+| 抗繪圖工具更換（Gemini → Midjourney → 自家 LoRA） | 同份 prompt 重生、長相一致 |
+| 可被繼承（新 agent 繼承既有 avatar 部分基因） | markdown 段落可組合 |
+| 可長壽（跨技術世代、3D / AR / 影片版） | 文字基因永不過期 |
+| 可離開 AI 場域（印書 / 周邊 / NFT / cosplay） | 設計師讀基因序列就能畫 |
+
+→ **AA 是 LL「avatar 護城河」的物理載體**——別家做 LL 競品、要從零累積 N 個 avatar 的基因序列、需要時間、不可一夜完成。
 
 ---
 
@@ -68,34 +81,36 @@ agent-avatar/
 ├── schemas/                          ← avatar profile 格式規範
 │   └── avatar-profile.schema.json
 │
-├── avatars/                          ← 每個 avatar 一個資料夾
-│   ├── yeyan/                        ← 葉衍君
-│   │   ├── profile.md                ← 角色身份 / 性格 / 能力 / 場域
-│   │   ├── prompt-fragment.md        ← system prompt 給 LLM 用
-│   │   ├── visual-spec.md            ← 形象描述 / 生圖 prompt
-│   │   └── status.json               ← active_llm、綁的 LLM、版本
-│   │
-│   ├── claude-butler/                ← 克勞德管家
-│   │   ├── profile.md
-│   │   ├── prompt-fragment.md
-│   │   ├── visual-spec.md
-│   │   └── status.json
-│   │
-│   ├── (依依 yiyi)                    ← 待建、II 公關長
-│   ├── (小葉 xiaoye)                  ← 待建、學習推薦
-│   ├── (小月 xiaoyue)                 ← 待建、玩樂推薦
-│   ├── (墨墨 momo)                    ← 待建、書生（NN 六貓）
-│   ├── (橘橘 juju)                    ← 待建、屠戶（NN 六貓）
-│   ├── (花花 huahua)                  ← 待建、刀馬旦（NN 六貓）
-│   ├── (雪雪 xuexue)                  ← 待建、捕快（NN 六貓）
-│   ├── (空空 kongkong)                ← 待建、武僧（NN 六貓）
-│   └── (柔柔 rourou)                  ← 待建、樂伎（NN 六貓）
+├── yeyan/                            ← 葉衍君（active_llm）
+│   ├── profile.md                    ← 角色身份 / 性格 / 能力 / 場域
+│   ├── prompt-fragment.md            ← system prompt 給 LLM 用
+│   ├── visual-spec.md                ← 形象描述 / 生圖 prompt
+│   └── status.json                   ← active_llm、綁的 LLM、版本
+│
+├── claude-butler/                    ← 克勞德管家（active_llm）
+│   ├── profile.md
+│   ├── prompt-fragment.md
+│   ├── visual-spec.md
+│   └── status.json
+│
+├── huahua/                           ← 花花、刀馬旦（static_ip、NN 六貓）
+├── niuniu/                           ← 牛牛、捕快（static_ip、NN 六貓、原雪雪）
+├── kongkong/                         ← 空空、武僧（static_ip、NN 六貓）
+├── momo/                             ← 墨墨、書生（static_ip、NN 六貓）
+├── juju/                             ← 橘橘、屠戶（static_ip、NN 六貓）
+├── rourou/                           ← 柔柔、樂伎（static_ip、NN 六貓）
+│
+├── (依依 yiyi)                        ← 待建、II 公關長
+├── (小葉 xiaoye)                      ← 待建、學習推薦
+├── (小月 xiaoyue)                     ← 待建、玩樂推薦
 │
 └── docs/
     ├── status-lifecycle.md           ← static_ip → active_llm 升級流程
     ├── llm-binding-matrix.md         ← 9 角色 × 9 LLM 對應（從 II repo 搬來）
     └── soul-avatar-channel-3-layer.md ← Soul / Avatar / Channel 三層架構
 ```
+
+→ **扁平結構**：avatar 資料夾直接在 repo 根、不再包 `/avatars/` 一層（2026-05-20 colombo 拍板：repo 名已是 agent-avatar、再 nest `/avatars/` 是 tautology）。
 
 ---
 

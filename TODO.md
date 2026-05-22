@@ -17,8 +17,8 @@
 
 - [ ] `REGISTER.md`——所有 avatar 一覽表（簡表 + status + 通路）
 - [ ] `schemas/avatar-profile.schema.json`——profile.md frontmatter 規範
-- [ ] `avatars/yeyan/profile.md` + `prompt-fragment.md` + `status.json`
-- [ ] `avatars/claude-butler/profile.md` + `prompt-fragment.md` + `visual-spec.md` + `status.json`
+- [x] `yeyan/profile.md` + `prompt-fragment.md` + `status.json`
+- [x] `claude-butler/profile.md` + `prompt-fragment.md` + `visual-spec.md` + `status.json`
 
 ## v0.1（YY 上線同步）
 

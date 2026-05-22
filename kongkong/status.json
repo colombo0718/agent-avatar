@@ -1,0 +1,15 @@
+{
+  "id": "kongkong",
+  "display_name": "空空",
+  "status": "static_ip",
+  "domain": "陪玩",
+  "ip_source": "NN 六貓",
+  "channels": [],
+  "llm_binding": {
+    "vendor": "IBM",
+    "model_id": "@cf/ibm/granite-4.0-h-micro",
+    "note": "Granite 花崗岩反差萌、配無毛貓武僧"
+  },
+  "version": "0.1.0",
+  "created": "2026-05-20"
+}
