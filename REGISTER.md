@@ -1,7 +1,18 @@
-# REGISTER.md — Avatar 一覽表
+ㄅ# REGISTER.md — Avatar 一覽表
 
 > 本檔是 AA 的目錄、列出所有 avatar 的簡表。詳細設定見各 avatar 資料夾。
-> 最後更新：2026-05-22
+> 最後更新：2026-05-23
+
+---
+
+## 👑 royals（LL 創辦人層、非 LLM avatar、保留位）
+
+| Avatar | 中文 | 角色 | profile |
+|--------|------|------|---------|
+| colombo | colombo | King、LL 唯一人類創辦人 | （未來補檔）|
+| xuan | Xuan | Queen、共同創辦人配偶、XX 品牌來源 | （未來補檔、Xuan 親自審視）|
+
+→ 詳見 [`matrix-manager/meetings/2026-05-23-ee-experiment-spawn-and-xuan-queen.md`](../matrix-manager/meetings/2026-05-23-ee-experiment-spawn-and-xuan-queen.md)、infinity-identity memory `user_xuan_queen_of_ll.md`。
 
 ---
 
