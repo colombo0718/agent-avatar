@@ -39,12 +39,23 @@
 
 ---
 
-## 規劃中 / 待建（II 群星會精靈）
+## 規劃中 / 待建
+
+### II 群星會精靈
 
 | Avatar | 中文 | 角色 | 規劃綁 LLM | 對應 channel |
 |--------|------|------|---------|------------|
 | xiaoye | 小葉 | 學習推薦員 | Zhipu GLM-4.7-flash | II Widget |
 | xiaoyue | 小月 | 玩樂推薦員 | OpenAI GPT-OSS-20b | II Widget |
+
+### 藏經閣男組（OO 三身一名、2026-05-30 登錄）
+
+| Avatar | 中文 | 角色 | 規劃綁 LLM | 對應 channel |
+|--------|------|------|---------|------------|
+| **lingling** | **伶伶 / 翎翎 / 凌凌** | 事項與檔案管家、藏經閣常駐、跟 yiyi 對位 | TBD（伶伶 Qwen / 翎翎 Claude Haiku / 凌凌 Claude Sonnet+ 或 Kimi） | OO LINE OA（規劃中） |
+
+→ 三身一名同檔處理（同 yiyi 模式）、詳見 [`lingling/profile.md`](lingling/profile.md)。
+→ 跟依依組（[`yiyi/`](yiyi/)）為跨閣浪漫對位、見 infinity-identity memory `project-ll-cross-line-romance-narrative`。
 
 > 依依（yiyi）2026-05-22 從規劃中 → active_llm、見上方。
 
@@ -77,7 +88,7 @@ dormant_llm ──恢復──→ active_llm
 
 - active_llm：**3**（v0、實作中、含依依首次落地於 EE）
 - static_ip：**6**（IP 資產備位）
-- 規劃中：**2**（II 精靈：小葉、小月）
-- 跨家族：**1**（阿全、待定）
+- 規劃中：**3**（II 精靈：小葉、小月 + OO 藏經閣男組 lingling 三身一名）
+- 跨家族：**1**（阿全、待定。註：阿全 = cwsoft 特化版的凌凌、見 memory `project-ll-cwsoft-synergy`）
 
-→ LL avatar 完整宇宙當前 **12 個**、未來會持續加入。
+→ LL avatar 完整宇宙當前 **13 個**、未來會持續加入。

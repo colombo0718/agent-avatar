@@ -1,0 +1,34 @@
+{
+  "id": "lingling",
+  "display_name": "伶伶 / 翎翎 / 凌凌",
+  "status": "planned",
+  "domain": "公領域、LL 對外",
+  "channels": ["OO LINE OA（規劃中）"],
+  "llm_binding": {
+    "vendor": "TBD",
+    "model_id": "TBD",
+    "note": "Phase 1 動工時依 tier 選 model、伶伶走便宜、凌凌走 Claude / Kimi"
+  },
+  "three_forms": {
+    "free": {
+      "name": "伶伶",
+      "title": "藏經閣小書童",
+      "model_candidate": "@cf/qwen/qwen2.5-7b-instruct"
+    },
+    "paid": {
+      "name": "翎翎",
+      "title": "藏經閣司典",
+      "model_candidate": "Anthropic Claude Haiku / Sonnet"
+    },
+    "enterprise": {
+      "name": "凌凌",
+      "title": "藏經閣典藏使",
+      "model_candidate": "Anthropic Claude Sonnet / Opus / Kimi K2"
+    }
+  },
+  "paired_avatar": "yiyi",
+  "lore_location": "葉月仙宗 · 藏經閣",
+  "version": "0.1.0",
+  "created": "2026-05-30",
+  "last_updated": "2026-05-30"
+}
